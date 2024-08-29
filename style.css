@@ -1,0 +1,104 @@
+main{
+    background-color: rgb(230,239,246);
+    display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-block: 2em;
+  min-height: 100vh;
+}
+.container{
+    max-width: 300px;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-inline: 1.5em;
+    box-shadow: 0em 1em 2em #0000003b;
+    font-family: 'Karla',sans-serif;
+
+}
+h3{
+    margin-block:0 ;
+}
+.box{
+    padding: 2em;
+    
+}
+.first{
+    background-color: #fff;
+    line-height: 1.5em;
+    color: #0000007c;
+}
+.first p{
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+.first h3{
+    color:  rgb(43,179,177);
+}
+.first h4{
+    color:rgb(191, 223, 50);
+}
+.second{
+    background-color: rgb(43,179,177);
+    color: #fff;
+}
+.second p{
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+.second div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1em;
+}
+.second div p{
+    margin: 0;
+    margin-left: 1em;
+    opacity: 0.6;
+}
+.second div h3{
+    opacity: 1;
+}
+.second a{
+    display: block;
+    background-color: rgb(191, 223, 50);
+    text-align: center;
+    padding-block: 0.8em;
+    border-radius: 0.4em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffffd4;
+    box-shadow: 0em 0.3em 1em rgb(0 0 0 / 16%);
+    margin-top: 1.6em;
+}
+.third{
+    color: #fff;
+    background-color: rgb(74,190,189);
+    line-height: 1.3em;
+}
+.third p{
+    padding-right: 5em;
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+@media(min-width:768px){
+    .container{
+        margin-top: 2em;
+        max-width:530px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first{
+        grid-column-start: span 3;
+    }
+    .first h4{
+        margin-bottom: 0;
+    }
+    .first p{
+        margin-top: 0;
+    }
+    .third p{
+        padding-right: 3em;
+    }
+}
